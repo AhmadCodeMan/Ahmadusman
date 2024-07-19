@@ -713,12 +713,13 @@
         /**********************---SERVICES---*************************/
         
         .projects-container{
-            background: url('img/background.jpg');
+            background: url('IMG/background.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
             width: 100vw;
             min-height: 100vh;
+            max-height: 1080px;
             position: fixed;
             z-index: -1;
             bottom: 0;
@@ -864,7 +865,7 @@
         }
         .msg-box textarea{
             padding: 5px 10px;
-            max-width: 100%;
+            max-width: 90%;
             font-size: 20px;
             color: #fff;
             background: transparent;
