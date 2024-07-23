@@ -534,8 +534,8 @@
             justify-content: center;
         }
         .profile-picture img{
-            margin-top: 30px;
-            height: 150%;
+            margin-top: 60px;
+            height: 160%;
             width: 120%;
             border-radius: ;
         }
@@ -736,13 +736,9 @@
             top: 0;
             left: 0;
             width: 100vw;
-            
             min-height: 100vh;
             background: rgba(0,0,0,0.7);
         }
-        
-        
-        
         .projects{
             display: flex;
             flex-direction: column;
@@ -772,7 +768,7 @@
             flex-direction: column;
             align-items: center;
             margin: 20px;
-            max-height: 500px;
+            
         }
         .testimony-types{
             border: 3px solid #24beff;
@@ -781,10 +777,15 @@
             align-items: center;
             justify-content: center;
             margin: 20px;
-            height: 450px;;
+            height: 450px;
             border-radius: 10px;
+            box-shadow: 0px 0px 10px #aaa;
+            transition: 0.5s;
         }
-        
+        .testimony-types:hover{
+            background: #24beff;
+            transform: scale(1.05);
+        }
         .project-type-photo, .testimony-type-photo{
             width: 90%;
             height: auto;
@@ -794,10 +795,12 @@
         }
         .project-type-photo img{
             width: 100%;
+            max-width: 400px;
             margin-bottom: 10px;
         }
         .testimony-type-photo img{
-            width: 200px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             margin-bottom: ;
             border: 4px solid #24beff;
@@ -813,18 +816,36 @@
         .project-type-title, .testimony-type-title{
             font-size: 30px;
             font-weight: 300;
-            color: #24beff;
+            color: #fff;
             font-family: fantasy;
             width: 100%;
             font-style: italic;
             text-transform: uppercase;
             text-align: center;
-            -webkit-text-stroke: 1px #000;
+            -webkit-text-stroke: 1px #24beff;
+        }
+        .project-types a{
+            width: 200px;
+            height: 40px;
+            border: 2px solid #24beff;
+            background: #24beff;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        .project-types a:active{
+            background: transparent;
         }
         .project-type-contents, .testimony-type-contents{
             width: 90%;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: #fff;
+            margin: 10px 0px;
         }
         
         .contact-container{
